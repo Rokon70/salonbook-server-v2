@@ -1,0 +1,22 @@
+{
+  "name": "salonbook-server-v2",
+  "version": "1.0.0",
+  "description": "SalonBook REST API (Express + MongoDB + JWT + Stripe)",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "seed": "node scripts/seed-services.js",
+    "make-admin": "node scripts/make-admin.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "jose": "^5.9.0",
+    "mongodb": "^6.9.0",
+    "multer": "^2.0.0",
+    "stripe": "^17.0.0"
+  }
+}
